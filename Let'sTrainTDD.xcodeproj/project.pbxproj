@@ -13,7 +13,7 @@
 		2F6FD44827B3D8940091BD8D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F6FD44627B3D8940091BD8D /* Main.storyboard */; };
 		2F6FD44A27B3D8980091BD8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F6FD44927B3D8980091BD8D /* Assets.xcassets */; };
 		2F6FD44D27B3D8980091BD8D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F6FD44B27B3D8980091BD8D /* LaunchScreen.storyboard */; };
-		2F6FD45B27B3D8CC0091BD8D /* Let_sTrainTDDTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6FD45A27B3D8CC0091BD8D /* Let_sTrainTDDTests.swift */; };
+		2F6FD46327B3D9C80091BD8D /* TestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6FD46227B3D9C80091BD8D /* TestCase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,8 +36,8 @@
 		2F6FD44C27B3D8980091BD8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2F6FD44E27B3D8980091BD8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2F6FD45827B3D8CC0091BD8D /* Let'sTrainTDDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Let'sTrainTDDTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2F6FD45A27B3D8CC0091BD8D /* Let_sTrainTDDTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Let_sTrainTDDTests.swift; sourceTree = "<group>"; };
 		2F6FD45C27B3D8CC0091BD8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F6FD46227B3D9C80091BD8D /* TestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,8 +93,8 @@
 		2F6FD45927B3D8CC0091BD8D /* Let'sTrainTDDTests */ = {
 			isa = PBXGroup;
 			children = (
-				2F6FD45A27B3D8CC0091BD8D /* Let_sTrainTDDTests.swift */,
 				2F6FD45C27B3D8CC0091BD8D /* Info.plist */,
+				2F6FD46227B3D9C80091BD8D /* TestCase.swift */,
 			);
 			path = "Let'sTrainTDDTests";
 			sourceTree = "<group>";
@@ -151,6 +151,7 @@
 					};
 					2F6FD45727B3D8CC0091BD8D = {
 						CreatedOnToolsVersion = 12.5.1;
+						LastSwiftMigration = 1250;
 						TestTargetID = 2F6FD43C27B3D8940091BD8D;
 					};
 				};
@@ -209,7 +210,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F6FD45B27B3D8CC0091BD8D /* Let_sTrainTDDTests.swift in Sources */,
+				2F6FD46327B3D9C80091BD8D /* TestCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,6 +400,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Let'sTrainTDDTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -408,6 +410,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Biko.Let-sTrainTDDTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Let'sTrainTDD.app/Let'sTrainTDD";
@@ -418,6 +421,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Let'sTrainTDDTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
