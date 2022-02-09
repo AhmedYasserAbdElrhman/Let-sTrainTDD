@@ -15,6 +15,7 @@
 		2F6FD44D27B3D8980091BD8D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F6FD44B27B3D8980091BD8D /* LaunchScreen.storyboard */; };
 		2F6FD46327B3D9C80091BD8D /* TestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6FD46227B3D9C80091BD8D /* TestCase.swift */; };
 		2F6FD46527B3DC570091BD8D /* TearDownTestExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6FD46427B3DC570091BD8D /* TearDownTestExample.swift */; };
+		2F6FD46727B3E1220091BD8D /* OrderOfTestsExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6FD46627B3E1220091BD8D /* OrderOfTestsExample.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		2F6FD45C27B3D8CC0091BD8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2F6FD46227B3D9C80091BD8D /* TestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCase.swift; sourceTree = "<group>"; };
 		2F6FD46427B3DC570091BD8D /* TearDownTestExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TearDownTestExample.swift; sourceTree = "<group>"; };
+		2F6FD46627B3E1220091BD8D /* OrderOfTestsExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderOfTestsExample.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 				2F6FD45C27B3D8CC0091BD8D /* Info.plist */,
 				2F6FD46227B3D9C80091BD8D /* TestCase.swift */,
 				2F6FD46427B3DC570091BD8D /* TearDownTestExample.swift */,
+				2F6FD46627B3E1220091BD8D /* OrderOfTestsExample.swift */,
 			);
 			path = "Let'sTrainTDDTests";
 			sourceTree = "<group>";
@@ -213,6 +216,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F6FD46727B3E1220091BD8D /* OrderOfTestsExample.swift in Sources */,
 				2F6FD46527B3DC570091BD8D /* TearDownTestExample.swift in Sources */,
 				2F6FD46327B3D9C80091BD8D /* TestCase.swift in Sources */,
 			);
