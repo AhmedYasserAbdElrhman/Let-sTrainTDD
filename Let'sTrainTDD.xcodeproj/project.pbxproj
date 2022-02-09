@@ -13,7 +13,18 @@
 		2F6FD44827B3D8940091BD8D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F6FD44627B3D8940091BD8D /* Main.storyboard */; };
 		2F6FD44A27B3D8980091BD8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F6FD44927B3D8980091BD8D /* Assets.xcassets */; };
 		2F6FD44D27B3D8980091BD8D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F6FD44B27B3D8980091BD8D /* LaunchScreen.storyboard */; };
+		2F6FD45B27B3D8CC0091BD8D /* Let_sTrainTDDTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6FD45A27B3D8CC0091BD8D /* Let_sTrainTDDTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2F6FD45D27B3D8CC0091BD8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2F6FD43527B3D8940091BD8D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2F6FD43C27B3D8940091BD8D;
+			remoteInfo = "Let'sTrainTDD";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		2F6FD43D27B3D8940091BD8D /* Let'sTrainTDD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Let'sTrainTDD.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +35,20 @@
 		2F6FD44927B3D8980091BD8D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2F6FD44C27B3D8980091BD8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2F6FD44E27B3D8980091BD8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F6FD45827B3D8CC0091BD8D /* Let'sTrainTDDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Let'sTrainTDDTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F6FD45A27B3D8CC0091BD8D /* Let_sTrainTDDTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Let_sTrainTDDTests.swift; sourceTree = "<group>"; };
+		2F6FD45C27B3D8CC0091BD8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		2F6FD43A27B3D8940091BD8D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F6FD45527B3D8CC0091BD8D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				2F6FD43F27B3D8940091BD8D /* Let'sTrainTDD */,
+				2F6FD45927B3D8CC0091BD8D /* Let'sTrainTDDTests */,
 				2F6FD43E27B3D8940091BD8D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				2F6FD43D27B3D8940091BD8D /* Let'sTrainTDD.app */,
+				2F6FD45827B3D8CC0091BD8D /* Let'sTrainTDDTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -65,6 +88,15 @@
 				2F6FD44E27B3D8980091BD8D /* Info.plist */,
 			);
 			path = "Let'sTrainTDD";
+			sourceTree = "<group>";
+		};
+		2F6FD45927B3D8CC0091BD8D /* Let'sTrainTDDTests */ = {
+			isa = PBXGroup;
+			children = (
+				2F6FD45A27B3D8CC0091BD8D /* Let_sTrainTDDTests.swift */,
+				2F6FD45C27B3D8CC0091BD8D /* Info.plist */,
+			);
+			path = "Let'sTrainTDDTests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,6 +119,24 @@
 			productReference = 2F6FD43D27B3D8940091BD8D /* Let'sTrainTDD.app */;
 			productType = "com.apple.product-type.application";
 		};
+		2F6FD45727B3D8CC0091BD8D /* Let'sTrainTDDTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F6FD45F27B3D8CC0091BD8D /* Build configuration list for PBXNativeTarget "Let'sTrainTDDTests" */;
+			buildPhases = (
+				2F6FD45427B3D8CC0091BD8D /* Sources */,
+				2F6FD45527B3D8CC0091BD8D /* Frameworks */,
+				2F6FD45627B3D8CC0091BD8D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2F6FD45E27B3D8CC0091BD8D /* PBXTargetDependency */,
+			);
+			name = "Let'sTrainTDDTests";
+			productName = "Let'sTrainTDDTests";
+			productReference = 2F6FD45827B3D8CC0091BD8D /* Let'sTrainTDDTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -98,6 +148,10 @@
 				TargetAttributes = {
 					2F6FD43C27B3D8940091BD8D = {
 						CreatedOnToolsVersion = 12.5.1;
+					};
+					2F6FD45727B3D8CC0091BD8D = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 2F6FD43C27B3D8940091BD8D;
 					};
 				};
 			};
@@ -115,6 +169,7 @@
 			projectRoot = "";
 			targets = (
 				2F6FD43C27B3D8940091BD8D /* Let'sTrainTDD */,
+				2F6FD45727B3D8CC0091BD8D /* Let'sTrainTDDTests */,
 			);
 		};
 /* End PBXProject section */
@@ -127,6 +182,13 @@
 				2F6FD44D27B3D8980091BD8D /* LaunchScreen.storyboard in Resources */,
 				2F6FD44A27B3D8980091BD8D /* Assets.xcassets in Resources */,
 				2F6FD44827B3D8940091BD8D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F6FD45627B3D8CC0091BD8D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,7 +205,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2F6FD45427B3D8CC0091BD8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F6FD45B27B3D8CC0091BD8D /* Let_sTrainTDDTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2F6FD45E27B3D8CC0091BD8D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2F6FD43C27B3D8940091BD8D /* Let'sTrainTDD */;
+			targetProxy = 2F6FD45D27B3D8CC0091BD8D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		2F6FD44627B3D8940091BD8D /* Main.storyboard */ = {
@@ -317,6 +395,44 @@
 			};
 			name = Release;
 		};
+		2F6FD46027B3D8CC0091BD8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Let'sTrainTDDTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Biko.Let-sTrainTDDTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Let'sTrainTDD.app/Let'sTrainTDD";
+			};
+			name = Debug;
+		};
+		2F6FD46127B3D8CC0091BD8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Let'sTrainTDDTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Biko.Let-sTrainTDDTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Let'sTrainTDD.app/Let'sTrainTDD";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -334,6 +450,15 @@
 			buildConfigurations = (
 				2F6FD45227B3D8980091BD8D /* Debug */,
 				2F6FD45327B3D8980091BD8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2F6FD45F27B3D8CC0091BD8D /* Build configuration list for PBXNativeTarget "Let'sTrainTDDTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F6FD46027B3D8CC0091BD8D /* Debug */,
+				2F6FD46127B3D8CC0091BD8D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
