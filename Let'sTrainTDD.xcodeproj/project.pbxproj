@@ -24,6 +24,7 @@
 		2FB3DEB927BBB99100646826 /* Screen Shot 2022-02-08 at 12.06.05 PM.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FB3DEB327BBB99100646826 /* Screen Shot 2022-02-08 at 12.06.05 PM.png */; };
 		2FB3DEBB27BBE83800646826 /* SignupFormModelValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB3DEBA27BBE83700646826 /* SignupFormModelValidatorTests.swift */; };
 		2FB3DEBD27BBE9C800646826 /* SignupFormModelValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB3DEBC27BBE9C800646826 /* SignupFormModelValidator.swift */; };
+		2FB3DEBF27BBF27000646826 /* SignupConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB3DEBE27BBF27000646826 /* SignupConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		2FB3DEB327BBB99100646826 /* Screen Shot 2022-02-08 at 12.06.05 PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen Shot 2022-02-08 at 12.06.05 PM.png"; sourceTree = "<group>"; };
 		2FB3DEBA27BBE83700646826 /* SignupFormModelValidatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupFormModelValidatorTests.swift; sourceTree = "<group>"; };
 		2FB3DEBC27BBE9C800646826 /* SignupFormModelValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupFormModelValidator.swift; sourceTree = "<group>"; };
+		2FB3DEBE27BBF27000646826 /* SignupConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 				2F6FD44B27B3D8980091BD8D /* LaunchScreen.storyboard */,
 				2F6FD44E27B3D8980091BD8D /* Info.plist */,
 				2FB3DEBC27BBE9C800646826 /* SignupFormModelValidator.swift */,
+				2FB3DEBE27BBF27000646826 /* SignupConstants.swift */,
 			);
 			path = "Let'sTrainTDD";
 			sourceTree = "<group>";
@@ -247,6 +250,7 @@
 				2F6FD44527B3D8940091BD8D /* ViewController.swift in Sources */,
 				2F6FD44127B3D8940091BD8D /* AppDelegate.swift in Sources */,
 				2FB3DEBD27BBE9C800646826 /* SignupFormModelValidator.swift in Sources */,
+				2FB3DEBF27BBF27000646826 /* SignupConstants.swift in Sources */,
 				2F6FD44327B3D8940091BD8D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
