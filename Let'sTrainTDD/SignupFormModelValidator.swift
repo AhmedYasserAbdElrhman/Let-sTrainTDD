@@ -21,5 +21,13 @@ class SignupFormModelValidator {
               lastName.count < SignupConstants.lastNameMaxLength else {return false}
         return true
     }
+    
+    func isEmailValid(email: String) -> Bool {
+        let pattern =
+            "[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?"
+        let predicate = NSPredicate(format: "SELF MATCHES %@", pattern)
+        return predicate.evaluate(with: email)
+
+    }
 
 }
