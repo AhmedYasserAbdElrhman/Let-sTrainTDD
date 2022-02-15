@@ -15,5 +15,11 @@ class SignupFormModelValidator {
               firstName.count < SignupConstants.firstNameMaxLength else {return false}
         return true
     }
-    
+
+    func isLastNameValid(lastName: String) -> Bool {
+        guard lastName.count > SignupConstants.lastNameMinLength,
+              lastName.count < SignupConstants.lastNameMaxLength else {return false}
+        return true
+    }
+
 }
