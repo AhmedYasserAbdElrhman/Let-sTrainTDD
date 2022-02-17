@@ -98,4 +98,46 @@ class SignupFormModelValidatorTests: XCTestCase {
         XCTAssertFalse(isEmailValid, "Provided InValid Email And Should Return False")
     }
 
+    func testSignupModelValidator_WhenValidPasswordProvided_ShouldReturnTrue() {
+        
+        // Act
+        let isPasswordValid = sut.isPasswordValid(password: "123456")
+        // Assert
+        XCTAssert(isPasswordValid, "The isPasswordValid() should have returned TRUE for a valid password")
+    }
+    
+    func testSignupModelValidator_WhenTooShortPasswordProvided_ShouldReturnFalse() {
+        
+        // Act
+        let isPasswordValid = sut.isPasswordValid(password: "123")
+        // Assert
+        XCTAssertFalse(isPasswordValid, "The isPasswordValid() should have returned FALSE for a too short password")
+    }
+
+    func testSignupModelValidator_WhenTooLongPasswordProvided_ShouldReturnFalse() {
+        
+        // Act
+        let isPasswordValid = sut.isPasswordValid(password: "12345678901234567")
+        // Assert
+        XCTAssertFalse(isPasswordValid, "The isPasswordValid() should have returned FALSE for a too long password")
+    }
+
+    
+    func testSignupModelValidator_WhenEqualPasswordsProvided_ShouldReturnTrue() {
+        
+        // Act
+        let isPassowrdsMatch = sut.isPasswordsMatch(password: "123456", confirmPassword: "123456")
+        // Assert
+        XCTAssert(isPassowrdsMatch,  "The isPasswordMatch should have returned TRUE for Equal Passwords")
+    }
+
+    
+    func testSignupModelValidator_WhenNotEqualPasswordsProvided_ShouldReturnFalse() {
+        
+        // Act
+        let isPassowrdsMatch = sut.isPasswordsMatch(password: "1234567", confirmPassword: "123456")
+        // Assert
+        XCTAssertFalse(isPassowrdsMatch,  "The isPasswordMatch should have returned FALSE for Not Equal Passwords")
+    }
+
 }

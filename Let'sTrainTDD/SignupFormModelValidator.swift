@@ -29,5 +29,15 @@ class SignupFormModelValidator {
         return predicate.evaluate(with: email)
 
     }
+    
+    func isPasswordValid(password: String) -> Bool {
+        guard password.count >= SignupConstants.passwordMinLenght,
+              password.count <= SignupConstants.passwordMaxLenght else {return false}
+        return true
+    }
+    
+    func isPasswordsMatch(password: String, confirmPassword: String) -> Bool {
+        return password == confirmPassword
+    }
 
 }
