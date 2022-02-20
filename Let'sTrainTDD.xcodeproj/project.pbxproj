@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2F1F16E227C24A130066E6DA /* SignupWebServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1F16E127C24A130066E6DA /* SignupWebServiceTests.swift */; };
 		2F1F16E427C24A770066E6DA /* SignupWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1F16E327C24A770066E6DA /* SignupWebService.swift */; };
+		2F1F16E627C24D680066E6DA /* SignupRequestBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1F16E527C24D680066E6DA /* SignupRequestBody.swift */; };
 		2F6FD44127B3D8940091BD8D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6FD44027B3D8940091BD8D /* AppDelegate.swift */; };
 		2F6FD44327B3D8940091BD8D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6FD44227B3D8940091BD8D /* SceneDelegate.swift */; };
 		2F6FD44527B3D8940091BD8D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6FD44427B3D8940091BD8D /* ViewController.swift */; };
@@ -42,6 +43,7 @@
 /* Begin PBXFileReference section */
 		2F1F16E127C24A130066E6DA /* SignupWebServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupWebServiceTests.swift; sourceTree = "<group>"; };
 		2F1F16E327C24A770066E6DA /* SignupWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupWebService.swift; sourceTree = "<group>"; };
+		2F1F16E527C24D680066E6DA /* SignupRequestBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupRequestBody.swift; sourceTree = "<group>"; };
 		2F6FD43D27B3D8940091BD8D /* Let'sTrainTDD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Let'sTrainTDD.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F6FD44027B3D8940091BD8D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2F6FD44227B3D8940091BD8D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 				2FB3DEBC27BBE9C800646826 /* SignupFormModelValidator.swift */,
 				2FB3DEBE27BBF27000646826 /* SignupConstants.swift */,
 				2F1F16E327C24A770066E6DA /* SignupWebService.swift */,
+				2F1F16E527C24D680066E6DA /* SignupRequestBody.swift */,
 			);
 			path = "Let'sTrainTDD";
 			sourceTree = "<group>";
@@ -253,6 +256,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F1F16E627C24D680066E6DA /* SignupRequestBody.swift in Sources */,
 				2F6FD44527B3D8940091BD8D /* ViewController.swift in Sources */,
 				2F6FD44127B3D8940091BD8D /* AppDelegate.swift in Sources */,
 				2FB3DEBD27BBE9C800646826 /* SignupFormModelValidator.swift in Sources */,
