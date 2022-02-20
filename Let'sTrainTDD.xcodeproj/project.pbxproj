@@ -90,6 +90,60 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2F1F16EB27C2517B0066E6DA /* Signup */ = {
+			isa = PBXGroup;
+			children = (
+				2F1F16ED27C251E90066E6DA /* Network */,
+				2F1F16EC27C251830066E6DA /* Models */,
+			);
+			path = Signup;
+			sourceTree = "<group>";
+		};
+		2F1F16EC27C251830066E6DA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2F1F16E527C24D680066E6DA /* SignupRequestBody.swift */,
+				2FB3DEBC27BBE9C800646826 /* SignupFormModelValidator.swift */,
+				2F1F16E727C24F980066E6DA /* SignupResponseModel.swift */,
+				2FB3DEBE27BBF27000646826 /* SignupConstants.swift */,
+				2F1F16E927C250210066E6DA /* SignupErrors.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2F1F16ED27C251E90066E6DA /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				2F1F16E327C24A770066E6DA /* SignupWebService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		2F1F16EE27C252130066E6DA /* Signup */ = {
+			isa = PBXGroup;
+			children = (
+				2F1F16F027C2521E0066E6DA /* Network */,
+				2F1F16EF27C252190066E6DA /* Models */,
+			);
+			path = Signup;
+			sourceTree = "<group>";
+		};
+		2F1F16EF27C252190066E6DA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2FB3DEBA27BBE83700646826 /* SignupFormModelValidatorTests.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2F1F16F027C2521E0066E6DA /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				2F1F16E127C24A130066E6DA /* SignupWebServiceTests.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		2F6FD43427B3D8940091BD8D = {
 			isa = PBXGroup;
 			children = (
@@ -111,6 +165,7 @@
 		2F6FD43F27B3D8940091BD8D /* Let'sTrainTDD */ = {
 			isa = PBXGroup;
 			children = (
+				2F1F16EB27C2517B0066E6DA /* Signup */,
 				2FB3DEAD27BBB99100646826 /* TDD-ImportantShots */,
 				2F6FD44027B3D8940091BD8D /* AppDelegate.swift */,
 				2F6FD44227B3D8940091BD8D /* SceneDelegate.swift */,
@@ -119,12 +174,6 @@
 				2F6FD44927B3D8980091BD8D /* Assets.xcassets */,
 				2F6FD44B27B3D8980091BD8D /* LaunchScreen.storyboard */,
 				2F6FD44E27B3D8980091BD8D /* Info.plist */,
-				2FB3DEBC27BBE9C800646826 /* SignupFormModelValidator.swift */,
-				2FB3DEBE27BBF27000646826 /* SignupConstants.swift */,
-				2F1F16E327C24A770066E6DA /* SignupWebService.swift */,
-				2F1F16E527C24D680066E6DA /* SignupRequestBody.swift */,
-				2F1F16E727C24F980066E6DA /* SignupResponseModel.swift */,
-				2F1F16E927C250210066E6DA /* SignupErrors.swift */,
 			);
 			path = "Let'sTrainTDD";
 			sourceTree = "<group>";
@@ -132,12 +181,11 @@
 		2F6FD45927B3D8CC0091BD8D /* Let'sTrainTDDTests */ = {
 			isa = PBXGroup;
 			children = (
+				2F1F16EE27C252130066E6DA /* Signup */,
 				2F6FD45C27B3D8CC0091BD8D /* Info.plist */,
 				2F6FD46227B3D9C80091BD8D /* TestCase.swift */,
 				2F6FD46427B3DC570091BD8D /* TearDownTestExample.swift */,
 				2F6FD46627B3E1220091BD8D /* OrderOfTestsExample.swift */,
-				2FB3DEBA27BBE83700646826 /* SignupFormModelValidatorTests.swift */,
-				2F1F16E127C24A130066E6DA /* SignupWebServiceTests.swift */,
 			);
 			path = "Let'sTrainTDDTests";
 			sourceTree = "<group>";
