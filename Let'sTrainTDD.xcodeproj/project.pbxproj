@@ -12,6 +12,7 @@
 		2F1F16E627C24D680066E6DA /* SignupRequestBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1F16E527C24D680066E6DA /* SignupRequestBody.swift */; };
 		2F1F16E827C24F980066E6DA /* SignupResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1F16E727C24F980066E6DA /* SignupResponseModel.swift */; };
 		2F1F16EA27C250210066E6DA /* SignupErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1F16E927C250210066E6DA /* SignupErrors.swift */; };
+		2F1F16F227C286A10066E6DA /* MockURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1F16F127C286A10066E6DA /* MockURLProtocol.swift */; };
 		2F6FD44127B3D8940091BD8D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6FD44027B3D8940091BD8D /* AppDelegate.swift */; };
 		2F6FD44327B3D8940091BD8D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6FD44227B3D8940091BD8D /* SceneDelegate.swift */; };
 		2F6FD44527B3D8940091BD8D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6FD44427B3D8940091BD8D /* ViewController.swift */; };
@@ -48,6 +49,7 @@
 		2F1F16E527C24D680066E6DA /* SignupRequestBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupRequestBody.swift; sourceTree = "<group>"; };
 		2F1F16E727C24F980066E6DA /* SignupResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupResponseModel.swift; sourceTree = "<group>"; };
 		2F1F16E927C250210066E6DA /* SignupErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupErrors.swift; sourceTree = "<group>"; };
+		2F1F16F127C286A10066E6DA /* MockURLProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLProtocol.swift; sourceTree = "<group>"; };
 		2F6FD43D27B3D8940091BD8D /* Let'sTrainTDD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Let'sTrainTDD.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F6FD44027B3D8940091BD8D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2F6FD44227B3D8940091BD8D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 			children = (
 				2F1F16F027C2521E0066E6DA /* Network */,
 				2F1F16EF27C252190066E6DA /* Models */,
+				2F1F16F127C286A10066E6DA /* MockURLProtocol.swift */,
 			);
 			path = Signup;
 			sourceTree = "<group>";
@@ -329,6 +332,7 @@
 				2F1F16E227C24A130066E6DA /* SignupWebServiceTests.swift in Sources */,
 				2F6FD46727B3E1220091BD8D /* OrderOfTestsExample.swift in Sources */,
 				2F6FD46527B3DC570091BD8D /* TearDownTestExample.swift in Sources */,
+				2F1F16F227C286A10066E6DA /* MockURLProtocol.swift in Sources */,
 				2FB3DEBB27BBE83800646826 /* SignupFormModelValidatorTests.swift in Sources */,
 				2F6FD46327B3D9C80091BD8D /* TestCase.swift in Sources */,
 			);
