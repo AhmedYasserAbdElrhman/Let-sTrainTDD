@@ -22,7 +22,7 @@ class SignupWebServiceTests: XCTestCase {
     func testSignupWebService_WhenGivenSuccessfullResponse_ReturnsSuccess() {
         
         // Arrange
-        let sut = SignupWebService(urlString: "http://appsdeveloperblog.com:8080/signup-mock-service/users")
+        let sut = SignupWebService(urlString: "https://tlyqhtlbn8.execute-api.us-east-1.amazonaws.com/prod/signup-mock-service/users")
         let signupRequestBody = SignupRequestBody(firstName: "Ahmad", lastName: "Yasser",
                                                   email: "ahmad@app.com", password: "123456")
         
