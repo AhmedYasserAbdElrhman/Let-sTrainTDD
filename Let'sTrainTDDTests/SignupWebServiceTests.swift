@@ -26,7 +26,9 @@ class SignupWebServiceTests: XCTestCase {
         let signupRequestBody = SignupRequestBody(firstName: "Ahmad", lastName: "Yasser",
                                                   email: "ahmad@app.com", password: "123456")
         
-        sut.signup(body: signupRequestBody)
+        sut.signup(body: signupRequestBody) { (responseModel, error) in
+            
+        }
         
     }
 
