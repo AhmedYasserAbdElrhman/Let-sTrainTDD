@@ -29,6 +29,7 @@ class SignupWebServiceTests: XCTestCase {
         sut = nil
         signupRequestBody = nil
         MockURLProtocol.stubResponseData = nil
+        MockURLProtocol.error = nil
     }
 
 
@@ -90,6 +91,24 @@ class SignupWebServiceTests: XCTestCase {
             expectation.fulfill()
         }
         
+        
+        self.wait(for: [expectation], timeout: 3)
+    }
+    
+    
+    func testSignupWebService_WhenURLRequestFails_ReturnsErrorMessageDescription() {
+       
+        // Arrange
+        let expectation = self.expectation(description: "A failed Request excpectation")
+        MockURLProtocol.error = SignupErrors.failedRequest
+        
+        // Act
+        sut.signup(body: signupRequestBody) { responseModel, error in
+            
+            // Assert
+            XCTAssertEqual(error, SignupErrors.failedRequest)
+            expectation.fulfill()
+        }
         
         self.wait(for: [expectation], timeout: 3)
     }
