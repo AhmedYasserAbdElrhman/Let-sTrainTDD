@@ -32,7 +32,7 @@ class SignupWebService {
             if let data = data, let signupResponseModel = try? JSONDecoder().decode(SignupResponseModel.self, from: data ) {
                 handler(signupResponseModel, nil)
             } else {
-                
+                handler(nil, SignupErrors.parsingError)
             }
         }.resume()
     }

@@ -44,5 +44,33 @@ class SignupWebServiceTests: XCTestCase {
         self.wait(for: [expectation], timeout: 5)
         
     }
+    
+    
+    
+    func testSignupWebService_WhenRecievedDifferentJSONResponse_ErrorTookPlace() {
+        // Arrange
+        let config = URLSessionConfiguration.ephemeral
+        config.protocolClasses = [MockURLProtocol.self]
+        let urlSession = URLSession(configuration: config)
+        let jsonDict = ["error": "some_error"]
+        MockURLProtocol.stubResponseData = try? JSONSerialization.data(withJSONObject: jsonDict, options: .prettyPrinted)
+        let sut = SignupWebService(urlString: SignupConstants.signupURLString, urlSession: urlSession)
+        let signupRequestBody = SignupRequestBody(firstName: "Ahmad", lastName: "Yasser",
+                                                  email: "ahmad@app.com", password: "123456")
+        
+        let expectation = self.expectation(description: "Signup Expectation for a response that contains different JSON structure")
+        // Act
+        sut.signup(body: signupRequestBody) { (responseModel, error) in
+            
+            // Assert
+            XCTAssertNil(responseModel)
+            XCTAssertEqual(error, SignupErrors.parsingError)
+            expectation.fulfill()
+        }
+        
+        
+        self.wait(for: [expectation], timeout: 5)
+
+    }
 
 }
