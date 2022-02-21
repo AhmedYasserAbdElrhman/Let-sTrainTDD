@@ -18,7 +18,10 @@ class SignupWebService {
     }
 
     func signup(body: SignupRequestBody, handler: @escaping (SignupResponseModel?, SignupErrors?) -> Void) {
-        guard let url = URL(string: urlString) else { return  }
+        guard let url = URL(string: urlString) else {
+            handler(nil, SignupErrors.invalidURLString)
+            return
+        }
         
         var request = URLRequest(url: url)
         request.httpMethod = "POST"

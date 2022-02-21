@@ -10,4 +10,5 @@ import Foundation
 enum SignupErrors: Error {
     
     case parsingError
+    case invalidURLString
 }
