@@ -13,7 +13,10 @@ class MockSignupValidator: SignupModelValidatorProtocol {
     // MARK:- Variables
     
     var isFirstNameValidated = false
-    
+    var isLastNameValidated = false
+    var isEmailValidated = false
+    var isPasswordValidated = false
+    var isPasswordMatchingValidated = false
     // MARK:- Functions
 
     func isFirstNameValid(firstName: String) -> Bool {
@@ -22,19 +25,23 @@ class MockSignupValidator: SignupModelValidatorProtocol {
     }
     
     func isLastNameValid(lastName: String) -> Bool {
-        true
+        isLastNameValidated = true
+        return isLastNameValidated
     }
     
     func isEmailValid(email: String) -> Bool {
-        true
+        isEmailValidated = true
+        return isEmailValidated
     }
     
     func isPasswordValid(password: String) -> Bool {
-        true
+        isPasswordValidated = true
+        return isPasswordValidated
     }
     
     func isPasswordsMatch(password: String, confirmPassword: String) -> Bool {
-        true
+        isPasswordMatchingValidated = true
+        return isPasswordMatchingValidated
     }
     
     

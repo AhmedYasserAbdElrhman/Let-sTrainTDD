@@ -105,10 +105,10 @@
 		2F1F16EB27C2517B0066E6DA /* Signup */ = {
 			isa = PBXGroup;
 			children = (
+				2F9266D027CE1D2900455DF9 /* Protocols */,
+				2F9266CF27CE1D0300455DF9 /* Presenter */,
 				2F1F16ED27C251E90066E6DA /* Network */,
 				2F1F16EC27C251830066E6DA /* Models */,
-				2FF96F3027C7858A00561E7A /* SignupPresenter.swift */,
-				2FF96F3427C795F400561E7A /* SignupModelValidatorProtocol.swift */,
 			);
 			path = Signup;
 			sourceTree = "<group>";
@@ -137,11 +137,10 @@
 		2F1F16EE27C252130066E6DA /* Signup */ = {
 			isa = PBXGroup;
 			children = (
+				2F9266D227CE1D7300455DF9 /* Mocks */,
+				2F9266D127CE1D4C00455DF9 /* Presenter */,
 				2F1F16F027C2521E0066E6DA /* Network */,
 				2F1F16EF27C252190066E6DA /* Models */,
-				2F1F16F127C286A10066E6DA /* MockURLProtocol.swift */,
-				2FF96F2C27C7815800561E7A /* SignupPresenterTests.swift */,
-				2FF96F3227C7902B00561E7A /* MockSignupValidator.swift */,
 			);
 			path = Signup;
 			sourceTree = "<group>";
@@ -206,6 +205,39 @@
 				2F6FD46627B3E1220091BD8D /* OrderOfTestsExample.swift */,
 			);
 			path = "Let'sTrainTDDTests";
+			sourceTree = "<group>";
+		};
+		2F9266CF27CE1D0300455DF9 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				2FF96F3027C7858A00561E7A /* SignupPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		2F9266D027CE1D2900455DF9 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				2FF96F3427C795F400561E7A /* SignupModelValidatorProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		2F9266D127CE1D4C00455DF9 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				2FF96F2C27C7815800561E7A /* SignupPresenterTests.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		2F9266D227CE1D7300455DF9 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				2F1F16F127C286A10066E6DA /* MockURLProtocol.swift */,
+				2FF96F3227C7902B00561E7A /* MockSignupValidator.swift */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 		2FB3DEAD27BBB99100646826 /* TDD-ImportantShots */ = {

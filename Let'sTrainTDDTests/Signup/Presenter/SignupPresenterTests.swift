@@ -30,6 +30,10 @@ class SignupPresenterTests: XCTestCase {
         
         // Assert
         XCTAssert(mockSignupModelValidator.isFirstNameValidated)
+        XCTAssert(mockSignupModelValidator.isLastNameValidated)
+        XCTAssert(mockSignupModelValidator.isEmailValidated)
+        XCTAssert(mockSignupModelValidator.isPasswordValidated)
+        XCTAssert(mockSignupModelValidator.isPasswordMatchingValidated)
     }
 
 }
