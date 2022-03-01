@@ -12,9 +12,11 @@ class SignupPresenter {
     // MARK:- Variables
     private var formModelValidator: SignupModelValidatorProtocol
     private var webService: SignupWebServiceProtocol
-    init(formModelValidator: SignupModelValidatorProtocol, webService: SignupWebServiceProtocol) {
+    private weak var view: SignupViewDelegateProtocol!
+    init(formModelValidator: SignupModelValidatorProtocol, webService: SignupWebServiceProtocol, view: SignupViewDelegateProtocol) {
         self.formModelValidator = formModelValidator
         self.webService = webService
+        self.view = view
     }
     
     
@@ -26,7 +28,12 @@ class SignupPresenter {
         guard formModelValidator.isPasswordsMatch(password: model.password, confirmPassword: model.repeatPassword) else {return}
         let body = SignupRequestBody(firstName: model.firstName, lastName: model.lastName,
                                      email: model.email, password: model.password)
-        webService.signup(body: body) { responseModel, error in
+        webService.signup(body: body) { [weak self] responseModel, error in
+            guard let self = self else {return}
+            if let responseModel = responseModel {
+                self.view.successfulSignup()
+                return
+            }
             
         }
         
