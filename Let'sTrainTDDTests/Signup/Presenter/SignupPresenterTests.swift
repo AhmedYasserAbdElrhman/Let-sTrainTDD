@@ -71,5 +71,23 @@ class SignupPresenterTests: XCTestCase {
         // Assert
         XCTAssertEqual(mockSignupViewDelegate.successfulSignupCounter, 1)
     }
+    
+    
+    func testSignupPresenter_WhenSignupOperationFailure_CallErrorHandlerOnViewDelegate() {
+        
+        // Arrange
+        let expectation = self.expectation(description: "Expected the errorHandler() method to be called")
+        mockSignupViewDelegate.expectation = expectation
+        mockSignupWebService.shouldReturnError = true
+        
+        // Act
+        sut.signup(model: signupFormModel)
+        self.wait(for: [expectation], timeout: 5)
+        // Assert
+        XCTAssertEqual(mockSignupViewDelegate.successfulSignupCounter, 0)
+        XCTAssertEqual(mockSignupViewDelegate.errorCounter, 1)
+        XCTAssertNotNil(mockSignupViewDelegate.signupError)
+        
+    }
 
 }

@@ -12,13 +12,18 @@ class MockSignupWebService: SignupWebServiceProtocol {
     
     // MARK:- Variables
     var isSignupMethodCalled = false
+    var shouldReturnError = false
     
     
     // MARK:- Functions
     
     func signup(body: SignupRequestBody, handler: @escaping (SignupResponseModel?, SignupErrors?) -> Void) {
         isSignupMethodCalled = true
-        handler(.init(status: "ok"), nil)
+        if shouldReturnError {
+            handler(nil, SignupErrors.failedRequest)
+        } else {
+            handler(.init(status: "ok"), nil)
+        }
     }
     
 

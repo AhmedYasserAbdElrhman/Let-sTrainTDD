@@ -34,7 +34,9 @@ class SignupPresenter {
                 self.view.successfulSignup()
                 return
             }
-            
+            if let error = error {
+                self.view.errorHandler(error: error)
+            }
         }
         
     }
