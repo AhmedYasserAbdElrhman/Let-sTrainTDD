@@ -34,4 +34,16 @@ class SignupViewControllerTests: XCTestCase {
         XCTAssertEqual(sut.passwordTextField.text, "")
         XCTAssertEqual(sut.repeatPasswordTextField.text, "")
     }
+    
+    
+    func testSignupViewController_WhenCreated_HasSignupButtonAndAction() throws {
+        
+        // Arrange
+        let signupButton: UIButton = try XCTUnwrap(sut.signupButton)
+        // Act
+        let signupButtonActions = try XCTUnwrap(signupButton.actions(forTarget: sut, forControlEvent: .touchUpInside))
+        // Assert
+        XCTAssertEqual(signupButtonActions.count, 1)
+        XCTAssert(signupButtonActions.contains("signupTapped:"))
+    }
 }

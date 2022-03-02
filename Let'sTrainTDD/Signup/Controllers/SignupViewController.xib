@@ -15,6 +15,7 @@
                 <outlet property="lastNameTextField" destination="Rlm-eh-3Mx" id="Zad-xc-hGD"/>
                 <outlet property="passwordTextField" destination="ym7-Qs-yUj" id="LAO-eP-E3R"/>
                 <outlet property="repeatPasswordTextField" destination="EQH-OC-mz1" id="S2y-aq-MxO"/>
+                <outlet property="signupButton" destination="nXT-s2-EO4" id="Boh-iq-LRF"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -24,7 +25,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="45" translatesAutoresizingMaskIntoConstraints="NO" id="Wk0-QY-xWU">
-                    <rect key="frame" x="16" y="44" width="382" height="350"/>
+                    <rect key="frame" x="16" y="44" width="382" height="425"/>
                     <subviews>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EYr-3C-O77">
                             <rect key="frame" x="0.0" y="0.0" width="382" height="34"/>
@@ -51,6 +52,13 @@
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits"/>
                         </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nXT-s2-EO4">
+                            <rect key="frame" x="0.0" y="395" width="382" height="30"/>
+                            <state key="normal" title="Signup"/>
+                            <connections>
+                                <action selector="signupTapped:" destination="-1" eventType="touchUpInside" id="hwQ-43-711"/>
+                            </connections>
+                        </button>
                     </subviews>
                 </stackView>
             </subviews>
