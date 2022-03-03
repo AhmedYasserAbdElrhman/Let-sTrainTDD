@@ -139,5 +139,49 @@ class SignupFormModelValidatorTests: XCTestCase {
         // Assert
         XCTAssertFalse(isPassowrdsMatch,  "The isPasswordMatch should have returned FALSE for Not Equal Passwords")
     }
+    
+    
+    func testSignupModelValidator_WhenFirstNameContainsInvalidCharacters_ThrowsAnError() {
+        
+        // Act Assert
+        XCTAssertThrowsError(try sut.isFirstNameValidWithCharacters(firstName: "Ahmad{"),
+                             "First Name Has Invalid Characters") { error in
+            XCTAssertEqual(error as? SignupErrors, SignupErrors.illegalCharactersFound)
+        }
+    }
+    
+    
+    func testSignupModelValidator_WhenFirstNameContainsInvalidCharacters_ThrowsAnErrorWithTryCatch() {
+        
+        // Act Assert
+        
+        do {
+            let _ = try sut.isFirstNameValidWithCharacters(firstName: "Ahmad{")
+            XCTFail()
+        } catch SignupErrors.illegalCharactersFound {
+            return
+        } catch {
+            XCTFail()
+        }
+    }
+
+    
+    
+    func testSignupModelValidator_WhenFirstNameNotContainsInvalidCharacters_ThrowsNoError() {
+        
+        // Act Assert
+        XCTAssertNoThrow(try sut.isFirstNameValidWithCharacters(firstName: "Ahmad"))
+    }
+
+    func testSignupModelValidator_WhenFirstNameNotContainsInvalidCharacters_ThrowsNoErrorWithTryCatch() {
+        
+        // Act Assert
+        do {
+            let _ = try sut.isFirstNameValidWithCharacters(firstName: "Ahmad")
+            return
+        } catch {
+            XCTFail()
+        }
+    }
 
 }
